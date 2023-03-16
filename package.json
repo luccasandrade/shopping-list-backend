@@ -1,0 +1,30 @@
+{
+  "name": "lista-de-compras",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "author": {
+    "name": "Luccas Andrade",
+    "email": "jluccasgabriel@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "koa": "^2.14.1",
+    "koa-bodyparser": "^4.4.0",
+    "koa-router": "^12.0.0"
+  }
+}
