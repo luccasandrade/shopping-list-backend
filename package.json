@@ -10,7 +10,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "nodemon --exec babel-node src/index.js"
+    "dev": "nodemon --exec babel-node api/index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",

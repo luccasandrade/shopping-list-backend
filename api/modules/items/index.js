@@ -14,6 +14,7 @@ export const create = async (ctx, next) => {
         })
         ctx.body = 'Item registrado com sucesso!'
     } catch (error) {
+        console.log("🚀 ~ error:", error)
         ctx.body = 'Erro ao registrar item.'
     }
 }
@@ -23,6 +24,7 @@ export const list = async (ctx, next) => {
         const allItems = await prisma.item.findMany()
         ctx.body = allItems
     } catch (error) {
+        console.log("🚀 ~ error:", error)
         ctx.body = 'Erro ao acessar banco de dados.'
     }
 }
@@ -38,6 +40,7 @@ export const remove = async (ctx, next) => {
         })
         ctx.body = 'Item deletado.'
     } catch (error) {
+        console.log("🚀 ~ error:", error)
         ctx.body = 'Não foi possível deletar o item.'
     }
 }
@@ -59,6 +62,7 @@ export const update = async (ctx, next) => {
         })
         ctx.body = 'Item atualizado.'
     } catch (error) {
+        console.log("🚀 ~ error:", error)
         ctx.body = 'Não foi possível atualizar o item.'
     }
 }
